@@ -1,0 +1,4 @@
+﻿  main.cpp
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\practica1\src\main.cpp(131): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\practica1\src\main.cpp(139): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+  Proyecto.vcxproj -> A:\Dani\Desktop\ESCRITORIO\UNI\2016-2017\Trabajos\Informática Gráfica\Practica1\Debug\Practica1.exe

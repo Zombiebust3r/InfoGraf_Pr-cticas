@@ -1,0 +1,8 @@
+﻿  main.cpp
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\shader\practica1\src\main.cpp(140): warning C4305: '+=': truncation from 'double' to 'float'
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\shader\practica1\src\main.cpp(148): warning C4305: '-=': truncation from 'double' to 'float'
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\shader\practica1\src\main.cpp(170): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'A:\Dani\Desktop\ESCRITORIO\UNI\2016-2017\Trabajos\Informßtica Grßfica\SHADER\Practica1\Debug\vc120.pdb'; linking object as if no debug info
+  Proyecto.vcxproj -> A:\Dani\Desktop\ESCRITORIO\UNI\2016-2017\Trabajos\Informática Gráfica\SHADER\Practica1\Debug\Practica1.exe

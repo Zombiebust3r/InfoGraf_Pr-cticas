@@ -1,0 +1,32 @@
+#version 330 core
+
+// Input vertex data, different for all executions of this shader.
+layout(location = 0) in vec3 vertexPosition_modelspace;
+
+out vec3 vertexPos;
+uniform mat4x4 matrix; //( ͡° ͜ʖ ͡°)
+//uniform float offset;
+//uniform float porcentajeR;
+//uniform float porcentajeG;
+
+void main(){
+	gl_Position = vec4(vertexPosition_modelspace.xyz, 1);
+	vertexPos = vertexPosition_modelspace.xyz;
+	gl_Position = matrix*vec4(vertexPosition_modelspace.xyz, 1);
+}
+
+/*
+if(vertexPosition_modelspace.y > 0) {
+		//vertexColor = vec4(0.f, 0.7f, 0.7f, 1.f);
+		gl_Position = vec4(vertexPosition_modelspace, 1.0);	
+	} else {
+		//vertexColor = vec4(porcentajeR, porcentajeG, 0.0f, 1.f);
+		if(vertexPosition_modelspace.x > 0) {
+			gl_Position = vec4(vertexPosition_modelspace.x + offset, vertexPosition_modelspace.y, vertexPosition_modelspace.z, 1.0);
+			
+		} else if(vertexPosition_modelspace.x < 0) {
+			gl_Position = vec4(vertexPosition_modelspace.x - offset, vertexPosition_modelspace.y, vertexPosition_modelspace.z, 1.0);
+			
+		}
+	}
+*/

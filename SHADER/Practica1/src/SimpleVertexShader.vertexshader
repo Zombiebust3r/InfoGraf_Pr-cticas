@@ -1,0 +1,52 @@
+#version 330 core
+
+// Input vertex data, different for all executions of this shader.
+layout(location = 0) in vec3 vertexPosition_modelspace;
+
+out vec4 vertexColor;
+out vec3 vertexPos;
+
+uniform float offset;
+uniform float porcentajeR;
+uniform float porcentajeG;
+
+void main(){
+	
+    //gl_Position.xyz = position;
+    //gl_Position.w = 1.0;
+	if(vertexPosition_modelspace.y > 0) {
+		vertexColor = vec4(0.f, 0.7f, 0.7f, 1.f);
+		gl_Position = vec4(vertexPosition_modelspace, 1.0);	
+	} else {
+		vertexColor = vec4(porcentajeR, porcentajeG, 0.0f, 1.f);
+		if(vertexPosition_modelspace.x > 0) {
+			gl_Position = vec4(vertexPosition_modelspace.x + offset, vertexPosition_modelspace.y, vertexPosition_modelspace.z, 1.0);
+			
+		} else if(vertexPosition_modelspace.x < 0) {
+			gl_Position = vec4(vertexPosition_modelspace.x - offset, vertexPosition_modelspace.y, vertexPosition_modelspace.z, 1.0);
+			
+		}
+	}
+	
+	vertexPos = vertexPosition_modelspace.xyz;
+	
+	/*
+	if(vertexPosition_modelspace.y > 0) {
+		gl_Position = vec4(vertexPosition_modelspace, 1.0);	
+	} else {
+		if(vertexPosition_modelspace.x < -0.5) {
+			if(vertexPosition_modelspace.x > -1) {gl_Position = vec4(vertexPosition_modelspace.x - offset, vertexPosition_modelspace.y, vertexPosition_modelspace.z, 1.0);}
+			else {gl_Position = vec4(vertexPosition_modelspace.x + offset, vertexPosition_modelspace.y, vertexPosition_modelspace.z, 1.0);}
+		}
+		else if(vertexPosition_modelspace.x > 0.5) {
+			if(vertexPosition_modelspace.x < 1) {gl_Position = vec4(vertexPosition_modelspace.x + offset, vertexPosition_modelspace.y, vertexPosition_modelspace.z, 1.0);}
+			else {gl_Position = vec4(vertexPosition_modelspace.x - offset, vertexPosition_modelspace.y, vertexPosition_modelspace.z, 1.0);}
+		}
+		
+	}
+	
+	*/
+	
+	//vertexColor = vec4(0.f, 1.f, 0.f, 1.f);
+}
+

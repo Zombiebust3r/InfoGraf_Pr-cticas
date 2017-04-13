@@ -1,0 +1,10 @@
+﻿  main.cpp
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\transformaciones\practica1\src\main.cpp(231): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\transformaciones\practica1\src\main.cpp(268): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\transformaciones\practica1\src\main.cpp(269): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\transformaciones\practica1\src\main.cpp(272): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\transformaciones\practica1\src\main.cpp(273): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'A:\Dani\Desktop\ESCRITORIO\UNI\2016-2017\Trabajos\Informßtica Grßfica\TRANSFORMACIONES\Practica1\Debug\vc120.pdb'; linking object as if no debug info
+  Proyecto.vcxproj -> A:\Dani\Desktop\ESCRITORIO\UNI\2016-2017\Trabajos\Informática Gráfica\TRANSFORMACIONES\Practica1\Debug\Practica1.exe

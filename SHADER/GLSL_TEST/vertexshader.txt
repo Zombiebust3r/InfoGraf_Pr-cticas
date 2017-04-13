@@ -1,0 +1,10 @@
+uniform float uScale;
+
+void main(void)
+{
+   vec4 a = gl_Vertex;
+   a.x = a.x * uScale;
+   a.y = a.y * uScale;
+
+   gl_Position = gl_ModelViewProjectionMatrix * a;
+}

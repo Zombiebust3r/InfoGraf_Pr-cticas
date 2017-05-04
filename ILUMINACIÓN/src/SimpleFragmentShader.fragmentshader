@@ -1,0 +1,58 @@
+#version 330 core
+//in vec3 ourColor;
+//in vec2 outTexCoord;
+
+in vec3 normalVector;
+in vec3 fragPosition;
+
+uniform vec3 lightColor;
+uniform vec3 lightPosition;
+uniform vec3 cubeColor;
+uniform vec3 cameraPosition;
+
+out vec4 color;
+
+//EJERCICIO 1
+//uniform sampler2D ourTexture;
+
+//EJERCICIO 2
+//uniform float mixValue;
+
+// Texture samplers
+//uniform sampler2D ourTexture1;
+//uniform sampler2D ourTexture2;
+
+void main()
+{	
+	//EJERCICIO 1
+	 //color = texture(ourTexture, TexCoord);
+	// EJERCICIO 2
+	//color = mix(texture(ourTexture1, outTexCoord), texture(ourTexture2, outTexCoord), mixValue);
+	//color = vec4(1, 1, 1, 1);
+	
+	vec3 normalizedV = normalize(normalVector);
+	vec3 lightDirection = normalize(lightPosition - fragPosition);
+	float distance = length(cameraPosition - fragPosition);
+	vec3 ce = vec3(1, 1, 1);
+	float attenuation = 1 / (ce.x * 1 + ce.y * distance + ce.z * pow(distance,2));
+	
+	float ambientStrength = 0.5f;
+	float ambientK = 1.0f;
+    vec3 ambient = ambientStrength * ambientK * lightColor;
+	
+	float diffuseStrength = 10.0f;
+	float diffuseK = 1.0f;
+	float tempdif = diffuseStrength * diffuseK * dot(normalizedV, lightDirection) * attenuation;
+	vec3 diffuse = tempdif * lightColor;
+	
+	float specularStrength = 10.5f;
+	float specularK = 1.0f;
+	vec3 reflect = 2*(lightDirection*normalizedV)*normalizedV - lightDirection;
+	vec3 normalisedCameraVector = normalize(cameraPosition - fragPosition);
+	float tempspec = specularStrength * specularK * pow( dot(reflect, normalisedCameraVector), 2 );
+	vec3 specular = tempspec * lightColor * attenuation;
+	
+    vec3 res = (ambient + diffuse + specular) * cubeColor;
+    color = vec4(res, 1.0f);
+	
+}

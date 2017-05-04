@@ -1,0 +1,41 @@
+﻿  main.cpp
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\iluminación\src\camara.h(78): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\iluminación\src\camara.h(79): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\iluminación\src\camara.h(83): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\iluminación\src\camara.h(84): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\iluminación\src\camara.h(85): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\iluminación\src\camara.h(86): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\iluminación\src\camara.h(112): warning C4244: '-=': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\iluminación\src\camara.h(123): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\iluminación\src\main.cpp(333): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\iluminación\src\main.cpp(334): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+Mesh.obj : warning LNK4049: locally defined symbol ___glewActiveTexture imported
+Mesh.obj : warning LNK4049: locally defined symbol ___glewBindBuffer imported
+Object.obj : warning LNK4049: locally defined symbol ___glewBindBuffer imported
+Mesh.obj : warning LNK4049: locally defined symbol ___glewBufferData imported
+Object.obj : warning LNK4049: locally defined symbol ___glewBufferData imported
+Mesh.obj : warning LNK4049: locally defined symbol ___glewGenBuffers imported
+Object.obj : warning LNK4049: locally defined symbol ___glewGenBuffers imported
+Mesh.obj : warning LNK4049: locally defined symbol ___glewEnableVertexAttribArray imported
+Object.obj : warning LNK4049: locally defined symbol ___glewEnableVertexAttribArray imported
+Mesh.obj : warning LNK4049: locally defined symbol ___glewGetUniformLocation imported
+Object.obj : warning LNK4049: locally defined symbol ___glewGetUniformLocation imported
+Mesh.obj : warning LNK4049: locally defined symbol ___glewUniform1f imported
+Mesh.obj : warning LNK4049: locally defined symbol ___glewVertexAttribPointer imported
+Object.obj : warning LNK4049: locally defined symbol ___glewVertexAttribPointer imported
+Mesh.obj : warning LNK4049: locally defined symbol ___glewBindVertexArray imported
+Object.obj : warning LNK4049: locally defined symbol ___glewBindVertexArray imported
+Mesh.obj : warning LNK4049: locally defined symbol ___glewGenVertexArrays imported
+Object.obj : warning LNK4049: locally defined symbol ___glewGenVertexArrays imported
+Model.obj : warning LNK4049: locally defined symbol ___glewGenerateMipmap imported
+Object.obj : warning LNK4049: locally defined symbol ___glewDeleteBuffers imported
+Object.obj : warning LNK4049: locally defined symbol ___glewUniformMatrix4fv imported
+Object.obj : warning LNK4049: locally defined symbol ___glewDeleteVertexArrays imported
+libSOIL.lib(image_DXT.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'libSOIL.lib(image_DXT.obj)' or at 'A:\Dani\Desktop\ESCRITORIO\UNI\2016-2017\Trabajos\Informßtica Grßfica\ILUMINACIËN\Debug\SOIL.pdb'; linking object as if no debug info
+libSOIL.lib(image_helper.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'libSOIL.lib(image_helper.obj)' or at 'A:\Dani\Desktop\ESCRITORIO\UNI\2016-2017\Trabajos\Informßtica Grßfica\ILUMINACIËN\Debug\SOIL.pdb'; linking object as if no debug info
+libSOIL.lib(SOIL.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'libSOIL.lib(SOIL.obj)' or at 'A:\Dani\Desktop\ESCRITORIO\UNI\2016-2017\Trabajos\Informßtica Grßfica\ILUMINACIËN\Debug\SOIL.pdb'; linking object as if no debug info
+libSOIL.lib(stb_image_aug.obj) : warning LNK4099: PDB 'SOIL.pdb' was not found with 'libSOIL.lib(stb_image_aug.obj)' or at 'A:\Dani\Desktop\ESCRITORIO\UNI\2016-2017\Trabajos\Informßtica Grßfica\ILUMINACIËN\Debug\SOIL.pdb'; linking object as if no debug info
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'A:\Dani\Desktop\ESCRITORIO\UNI\2016-2017\Trabajos\Informßtica Grßfica\ILUMINACIËN\Debug\vc120.pdb'; linking object as if no debug info
+  Proyecto.vcxproj -> A:\Dani\Desktop\ESCRITORIO\UNI\2016-2017\Trabajos\Informática Gráfica\ILUMINACIÓN\Debug\Practica1.exe

@@ -1,0 +1,12 @@
+﻿  main.cpp
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\scene\src\camara.h(79): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\scene\src\camara.h(80): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\scene\src\camara.h(84): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\scene\src\camara.h(85): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\scene\src\camara.h(86): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\scene\src\camara.h(87): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\scene\src\camara.h(111): warning C4244: '-=': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\scene\src\camara.h(122): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\scene\src\main.cpp(263): warning C4305: 'argument': truncation from 'double' to 'float'
+a:\dani\desktop\escritorio\uni\2016-2017\trabajos\informática gráfica\scene\src\main.cpp(272): warning C4305: 'argument': truncation from 'double' to 'float'
+  Proyecto.vcxproj -> A:\Dani\Desktop\ESCRITORIO\UNI\2016-2017\Trabajos\Informática Gráfica\SCENE\Debug\Practica1.exe

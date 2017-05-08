@@ -1,0 +1,47 @@
+#version 330 core
+
+in vec3 normalVector;
+in vec3 fragPosition;
+in vec2 textureCoords;
+
+struct Material {
+    sampler2D diffuse;
+    sampler2D specular;
+    float     shininess;
+};  
+
+uniform vec3 lightColor;
+uniform vec3 lightPosition;
+uniform vec3 cubeColor;
+uniform vec3 cameraPosition;
+uniform Material material;
+
+out vec4 color;
+
+void main()
+{	
+	vec3 normalV = normalize(normalVector);
+	vec3 lightDirection = normalize (lightPosition - fragPosition);
+	float distance = length(lightPosition - fragPosition);
+	vec3 C = vec3(1, 1, 1);
+	float attenuation = 1 / (C.x * 1 + C.y * distance + C.z*pow(distance,2));
+	//ambient
+	float ambientStrength = 0.1f;
+	float ambientK = 1.0f;
+    vec3 ambient = ambientStrength * ambientK *  vec3(texture(material.diffuse, textureCoords));;
+	//diffuse
+	float diffuseStrength = 0.5f;
+	float diffuseK = 1.0f;
+	float diff = diffuseK * dot(normalV, lightDirection);
+	vec3 diffuse = diffuseStrength * diffuseK * diff *  vec3(texture(material.diffuse, textureCoords));
+	//specular
+	float specularStrength = 0.5f;
+	float specularK = 1.0f;
+	vec3 reflect = 2*(dot(lightDirection,normalV))*normalV - lightDirection;
+	vec3 cameraV = normalize(cameraPosition - fragPosition);
+	float spec = pow(max(dot(reflect,cameraV), 0), material.shininess);
+	vec3 specular = specularStrength * specularK * spec * vec3(texture(material.specular, textureCoords));
+    vec3 result = (ambient + diffuse + specular) * lightColor;
+    color = vec4(result, 1.0f);
+	
+}

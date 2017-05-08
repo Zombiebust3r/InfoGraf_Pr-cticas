@@ -1,0 +1,24 @@
+#version 330 core
+//in vec3 ourColor;
+//in vec2 outTexCoord;
+
+uniform vec3 lightColor;
+
+out vec4 color;
+
+//uniform vec3 lightColor;
+//EJERCICIO 1
+//uniform sampler2D ourTexture;
+
+//EJERCICIO 2
+//uniform float mixValue;
+
+// Texture samplers
+//uniform sampler2D ourTexture1;
+//uniform sampler2D ourTexture2;
+
+void main()
+{	
+	 //color = texture(ourTexture, TexCoord);
+	color = vec4(lightColor, 1);
+}
